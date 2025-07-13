@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escape the Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Escape the Lab!</h1>
+    <div id="puzzle-container">
+      <p id="puzzle-text">Click Start to begin the puzzle challenge!</p>
+      <input type="text" id="answer-input" placeholder="Enter your answer..." />
+      <button onclick="submitAnswer()">Submit</button>
+      <button onclick="showHint()">Hint</button>
+      <p id="feedback"></p>
+      <p id="hint-text"></p>
+      <p id="code-progress"></p>
+    </div>
+    <button onclick="startGame()">Start</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

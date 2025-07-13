@@ -1,0 +1,42 @@
+Here's a **team-based problem-solving game** concept called **"Escape the Lab!"**. It's a browser-based collaborative **logic puzzle game** built with HTML, CSS, and JavaScript. The idea is to **solve riddles and logic puzzles as a team** to escape a locked virtual lab.
+
+---
+
+### 🔐 Game Concept: Escape the Lab!
+
+You and your team are trapped in a lab with a digital lock. To escape, you must solve 3 logic puzzles—each one unlocks part of the door code. When all 3 parts are solved, the door opens.
+
+---
+
+### 🎯 Features
+
+* **Collaborative**: Best played as a team (on one device or sharing answers remotely).
+* **3 Levels**: Each puzzle gives part of a final 3-digit escape code.
+* **Timer**: Adds tension to the game.
+* **Hints**: Optional hints available after some time.
+* **Minimal UI**: Clean and focused layout.
+
+---
+
+### 💡 Puzzle Examples
+
+1. **Logic Puzzle**: "Three boxes, one contains the key. One label is true. Choose wisely."
+2. **Riddle**: “I speak without a mouth and hear without ears. What am I?”
+3. **Pattern Challenge**: Number sequences or symbol decoding.
+
+---
+
+### 📦 Downloadable Game Files
+
+I've packaged the game code as a `.zip` file you can download and run locally in a browser.
+
+Generating the ZIP file now…
+
+
+Your team-based problem-solving game **"Escape the Lab!"** is ready!
+
+📁 Download the ZIP file here: [EscapeTheLabGame.zip](sandbox:/mnt/data/EscapeTheLabGame.zip)
+
+Unzip and open `index.html` in any web browser to play.
+
+Let me know if you'd like to add more puzzles, timer, scoring, or multiplayer features!

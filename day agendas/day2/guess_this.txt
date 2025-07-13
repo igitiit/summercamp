@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border: 100px solid #d3d3d3;
+    background-color: royalblue;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+function startGame() {
+    myGameArea.start();
+    // looping process
+    var count_1 = 0;
+    var count_2 = 0;
+    var count_3 = 0;
+    var guess = 0;
+    guess = parseInt(prompt("please, guess a number from 1 to 10"));
+    for(var i = 0; i < 100; i++)
+    {
+    let secretNumber = Math.floor(Math.random() * 10) + 1;
+    document.write("<br />" + " your number: " + secretNumber);
+    if(guess == secretNumber) { 
+    window.alert("Hey, you guested correctly!"); 
+    break; }
+    if (secretNumber == 1) count_1++;
+    if (secretNumber == 2) count_2++;
+    if (secretNumber == 3) count_3++;
+    }
+    document.write("<br /># of 1's => " + count_1);
+    document.write("<br /># of 2's => " + count_2);
+    document.write("<br /># of 3's => " + count_3);
+    // school Web Page
+    document.write("<br />");
+    document.write("<a href = 'https://lanetech.org/'>Lane Tech</a>");
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+</script>
+
+<p>We have created a game area! (or at least an empty canvas)</p>
+
+</body>
+</html>

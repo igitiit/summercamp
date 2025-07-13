@@ -1,0 +1,10 @@
+In GDevelop JavaScript events, you should use the API provided by GDevelop, and not access inputManager directly.
+
+----
+
+
+if (gdjs.evtTools.input.isKeyPressed(runtimeScene, "b")) {
+  // Use a once trigger to prevent repeated alerts
+  if (!runtimeScene.getOnceTriggers().triggerOnce(123456789)) return;
+  alert("You pressed b!");
+}

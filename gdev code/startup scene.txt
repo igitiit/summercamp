@@ -1,0 +1,19 @@
+// Set at end of events
+
+
+// Get the Score variable (scene variable)
+const scoreVar = runtimeScene.getVariables().get("Score");
+let score = scoreVar.getAsNumber();
+
+if (score >= 300) {
+  // Reset score to 0
+  scoreVar.setNumber(0);
+
+  // Set background color to white (RGB: 255,255,255)
+  runtimeScene.setBackgroundColor(255, 255, 255);
+
+  // Change to Scene2
+  //runtimeScene.replaceScene("Scene2", false);
+}
+
+// (Optional) Continue with other logic, like updating ScoreText, etc.
