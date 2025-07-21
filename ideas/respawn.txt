@@ -1,0 +1,5 @@
+5. Optional: Death or Respawn Logic
+To simulate the player "dying" when falling off the intended play space, add an invisible object beneath your visible play area.
+
+Detect collision with this object, and trigger your death or respawn event.
+
